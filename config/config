@@ -10,5 +10,5 @@ thumbdir='/var/www/path/to/thumbnails'
 #The thumbnail path that will be used on the finished site. - set this if you want thumbnails!
 webthumbdir='/path/to/thumbnails'
 
-#Name of your site, will be shown in the top left corner - default=RomLib
+#Name of your site, will be shown at the top - default=RomLib
 sitename='RomLib'
