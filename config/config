@@ -1,0 +1,14 @@
+#Location of your ROM directory - you need to set this yourself!
+romdir='/var/www/path/to/ROMs'
+
+#The download path that will be used on the finished site. - you need to set this yourself!
+webromdir='/path/to/ROMs'
+
+#Location of your Thumbnail directory - set this if you want thumbnails!
+thumbdir='/var/www/path/to/thumbnails'
+
+#The thumbnail path that will be used on the finished site. - set this if you want thumbnails!
+webthumbdir='/path/to/thumbnails'
+
+#Name of your site, will be shown in the top left corner - default=RomLib
+sitename='RomLib'

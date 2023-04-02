@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>$sitename - $device</title>
+<link rel="stylesheet" type="text/css" href="../styles.css" >
+</head>
+
+<header>
+<a href="../index.html"><h1><span>$sitename</span></h1></a>
+<br>
+</header>
+
+<body>
+
+<h2><span>$device</span></h2>
+<br>
+$romlist
+
+</body>
+</html> 

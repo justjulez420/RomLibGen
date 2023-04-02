@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>$sitename</title>
+<link rel="stylesheet" type="text/css" href="styles.css" >
+</head>
+
+<header>
+<h1><span>$sitename</span></h1>
+<br>
+</header>
+
+<body>
+
+<h2><span>Devices</span></h2>
+<br>
+$devlist
+
+</body>
+</html>
