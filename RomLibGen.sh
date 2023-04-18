@@ -20,7 +20,9 @@ echo "Generating Startpage..."
 rm cache/devlist 2> cache/log
 while read device
 do
+	href='<a href="'"${device}"'/index.html">'
 	echo '<div class="card">' >> cache/devlist
+	echo $href >> cache/devlist
 	thumb=$thumbdir/$device.png
 	webthumb=$webthumbdir/$device.png
 		if [ -f "$thumb" ]; then
@@ -30,13 +32,12 @@ do
 			img='<img src="notfound.png">'
 			echo $img >> cache/devlist
 		fi
-	href='<a href="'"${device}"'/index.html">'
-	device=$(echo $device | sed -e 's|^|'"${href}"'|')
-	device=$(echo $device | sed -e 's|$|</a>|')
 	echo '<div class="container">' >> cache/devlist
 	echo $device >> cache/devlist
 	echo '</div>' >> cache/devlist
+	echo '</a>' >> cache/devlist
 	echo '</div>' >> cache/devlist
+	echo '' >> cache/devlist
 done < cache/devices
 
 devlist=$(cat cache/devlist)
@@ -57,6 +58,7 @@ do
 		href='<a href="'"${webromdir}"'/'"${device}"'/'"${rom}"'">'
 		rom="${rom%.*}"
 		echo '<div class="card">' >> cache/$device.romlist
+		echo $href >> cache/$device.romlist
 		thumb=$thumbdir/$device/Named_Boxarts/$rom.png
 		webthumb=$webthumbdir/$device/Named_Boxarts/$rom.png
 			if [ -f "$thumb" ]; then
@@ -71,12 +73,13 @@ do
 		echo '<div class="container">' >> cache/$device.romlist
 		echo $rom >> cache/$device.romlist
 		echo '</div>' >> cache/$device.romlist
+		echo '</a>' >> cache/$device.romlist
 		echo '</div>' >> cache/$device.romlist
+		echo '' >>cache/$device.romlist
 	done < cache/$device
 	romlist=$(cat cache/$device.romlist)
 	eval "echo \"$(cat templates/devicepage)\"" > $sitename/$device/index.html
 done < cache/devices
 
 # --- Finish ---
-rm -r cache
 echo "Done!"
