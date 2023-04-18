@@ -1,6 +1,6 @@
 # RomLibGen
 
-A static http rom library generator written in bash
+A static html rom library generator written in bash
 ![](https://raw.githubusercontent.com/justjulez420/RomLibGen/main/example-images/ex1.png)
 ![](https://raw.githubusercontent.com/justjulez420/RomLibGen/main/example-images/ex2.png)
 ![](https://raw.githubusercontent.com/justjulez420/RomLibGen/main/example-images/ex3.png)
