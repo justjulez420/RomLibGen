@@ -58,7 +58,7 @@ do
 		rom="${rom%.*}"
 		echo '<div class="card">' >> cache/$device.romlist
 		thumb=$thumbdir/$device/Named_Boxarts/$rom.png
-		webthumb=$webthumbdir/$device.png/Named_Boxarts/$rom.png
+		webthumb=$webthumbdir/$device/Named_Boxarts/$rom.png
 			if [ -f "$thumb" ]; then
 				img='<img src="'"$webthumb"'">'
 				echo $img >> cache/$device.romlist
