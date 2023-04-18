@@ -82,4 +82,6 @@ do
 done < cache/devices
 
 # --- Finish ---
+rm -r cache
+
 echo "Done!"
