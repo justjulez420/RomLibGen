@@ -1,3 +1,7 @@
+# !!!IMPORTANT!!!
+## This project (along with everything else on my profile) has moved over to gitlab! 
+## Any future updates will be pushed to https://gitlab.com/justjulez420/RomLibGen
+
 # RomLibGen
 
 A static html rom library generator written in bash
